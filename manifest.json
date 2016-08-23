@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+
+  "name": "jQuery Loader",
+  "description": "Loads jQuery on to the next page",
+  "version": "1.0",
+  "icons": {
+        "128": "android-chrome-192x192.png"
+    },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["jquery-1.11.3.min.js","jquery-1.11.3.js"]
+    }
+  ],
+	"web_accessible_resources": ["script.js","new%207.js","sortable/jquery-latest.js","sortable/jquery.tablesorter.js"]
+}
